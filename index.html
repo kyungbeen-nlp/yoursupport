@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Support 유어서포트 · 20·30대 1:1 라이프코칭</title>
+  <meta name="description" content="정답 대신 질문으로, 12주 동안 나를 설명하는 말과 기준을 다시 세우는 20·30대 1:1 라이프코칭. 자기이해, 가치관, 관계, 진로와 성장.">
+  <meta name="theme-color" content="#FAF9F4">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Your Support 유어서포트 코칭센터">
+  <meta property="og:description" content="나를 설명하는 말을 처음부터 다시 씁니다. 20·30대 1:1 라이프코칭.">
+  <meta property="og:url" content="https://yoursupport.co.kr/">
+  <meta property="og:image" content="https://yoursupport.co.kr/assets/img/og.jpg">
+  <link rel="canonical" href="https://yoursupport.co.kr/">
+  <!-- 예시 정보를 실제 정보로 바꾸기 전까지 검색엔진 노출을 막아 둠. 공개할 때 이 줄을 지우면 됨 -->
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="assets/img/favicon-64.png" sizes="64x64" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="preload" as="image" href="assets/img/logo-full.webp" type="image/webp" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/img/hero-poster.webp" type="image/webp">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    (function (d) {
+      var r = d.documentElement;
+      r.classList.add('js');
+      var pf = window.performance, nav = pf && pf.getEntriesByType ? pf.getEntriesByType('navigation')[0] : null;
+      var type = nav ? nav.type : (pf && pf.navigation ? ['navigate', 'reload', 'back_forward'][pf.navigation.type] : '');
+      /* 특정 위치로 바로 왔거나 새로고침·뒤로가기로 돌아온 경우: 인트로 없이 보던 자리 그대로 */
+      if (location.hash.length > 1 || type === 'reload' || type === 'back_forward') r.classList.add('no-intro');
+      if ('scrollRestoration' in history) history.scrollRestoration = 'auto';
+      setTimeout(function () { if (!window.ysIntro) { r.classList.add('no-intro', 'is-revealed'); } }, 6000);
+    })(document);
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">본문으로 건너뛰기</a>
+
+  <!-- 첫 화면 인트로: 로고 → 글자의 잉크가 상담 장면이 됨 (JS가 있을 때만) -->
+  <div class="intro" aria-hidden="true">
+    <div class="intro-paper"></div>
+    <canvas class="intro-canvas"></canvas>
+    <img class="intro-logo" src="assets/img/logo-full.webp" alt="" width="1400" height="857" fetchpriority="high" decoding="async">
+  </div>
+
+  <header class="site-header" data-theme="over-media">
+    <a class="brand" href="#top" aria-label="Your Support 유어서포트, 맨 위로">
+      <span class="brand-logo" aria-hidden="true"></span>
+      <span class="brand-ko" aria-hidden="true">유어서포트</span>
+    </a>
+    <nav class="menu" aria-label="주요 메뉴">
+      <ul>
+        <li><a href="#areas">코칭 영역</a></li>
+        <li><a href="#journey">12주 과정</a></li>
+        <li><a href="#coach">코치</a></li>
+        <li><a href="#faq">자주 묻는 질문</a></li>
+      </ul>
+    </nav>
+    <a class="pill pill-accent nav-cta" href="#apply">상담 신청</a>
+  </header>
+
+  <main id="main">
+    <!-- 첫 화면: 영상 -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-media" aria-hidden="true">
+        <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="assets/img/hero-poster.webp">
+          <source src="assets/video/hero.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="hero-shade" aria-hidden="true"></div>
+
+      <div class="hero-copy">
+        <p class="hero-label">20·30대 1:1 라이프코칭 · <span class="ex"><span class="nw">청주<span class="ex-mark"><span class="sr-only">(</span>예시<span class="sr-only">)</span></span></span></span></p>
+        <h1 id="hero-title" class="hero-title">
+          <span class="line"><span>나를 설명하는 말을</span></span>
+          <span class="line"><span>처음부터 다시 씁니다</span></span>
+        </h1>
+      </div>
+
+      <div class="hero-aside">
+        <p>정답을 대신 골라 드리지 않습니다. 질문하고, 적고, 다시 묻는 <span class="ex"><span class="nw">12주<span class="ex-mark"><span class="sr-only">(</span>예시<span class="sr-only">)</span></span></span></span> 동안 흔들리지 않을 나만의 기준을 함께 세웁니다.</p>
+        <a class="pill pill-ghost" href="#apply">첫 상담 신청하기 <svg class="arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+      </div>
+
+      <button class="video-toggle" type="button" aria-pressed="false" aria-label="배경 영상 멈춤">
+        <svg class="i-pause" viewBox="0 0 16 16" aria-hidden="true"><path d="M5 3v10M11 3v10"/></svg>
+        <svg class="i-play" viewBox="0 0 16 16" aria-hidden="true"><path d="M5 3l8 5-8 5z"/></svg>
+      </button>
+    </section>
+
+    <!-- 한 문단 소개 -->
+    <section class="statement section" aria-labelledby="statement-title">
+      <div class="wrap">
+        <h2 id="statement-title" class="statement-text">흔들리는 20·30대가 자기 언어로 기준을 세우도록 돕는 1:1 라이프코칭입니다. 정답을 건네지 않고, 스스로 고를 수 있을 때까지 함께 묻습니다.</h2>
+        <a class="pill pill-dark" href="#journey">12주 과정 보기</a>
+      </div>
+    </section>
+
+    <!-- 이런 밤이 잦다면 -->
+    <section class="nights section" aria-labelledby="nights-title">
+      <div class="wrap nights-grid">
+        <div class="nights-head">
+          <h2 id="nights-title" class="h2">요즘, 이런 밤이<br>잦다면</h2>
+          <p class="nights-note lede" aria-live="polite">해당하는 곳에 표시해 보세요. 하나면 시작하기에 충분합니다.</p>
+        </div>
+        <fieldset class="checklist">
+          <legend class="sr-only">나에게 해당하는 것에 표시해 보세요</legend>
+          <label class="check-row">
+            <input type="checkbox" data-text="나를 소개하는 한 문장이 떠오르지 않는다">
+            <span class="box" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3.5 8.5l3 3 6-7"/></svg></span>
+            <span class="check-text">나를 소개하는 한 문장이 떠오르지 않는다</span>
+          </label>
+          <label class="check-row">
+            <input type="checkbox" data-text="남의 기준으로 고르고 나서 자꾸 후회한다">
+            <span class="box" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3.5 8.5l3 3 6-7"/></svg></span>
+            <span class="check-text">남의 기준으로 고르고 나서 자꾸 후회한다</span>
+          </label>
+          <label class="check-row">
+            <input type="checkbox" data-text="비슷한 관계 문제가 이름만 바꿔 반복된다">
+            <span class="box" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3.5 8.5l3 3 6-7"/></svg></span>
+            <span class="check-text">비슷한 관계 문제가 이름만 바꿔 반복된다</span>
+          </label>
+          <label class="check-row">
+            <input type="checkbox" data-text="나아지고 싶은데 어디서부터인지 모르겠다">
+            <span class="box" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3.5 8.5l3 3 6-7"/></svg></span>
+            <span class="check-text">나아지고 싶은데 어디서부터인지 모르겠다</span>
+          </label>
+        </fieldset>
+      </div>
+    </section>
+
+    <!-- 코칭 영역: 사진 카드 -->
+    <section class="areas section" id="areas" aria-labelledby="areas-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="areas-title" class="h2">네 갈래로<br>나를 들여다봅니다</h2>
+          <p class="lede">진로, 관계, 자기계발을 따로 떼어 보지 않습니다. 서로 연결된 하나의 삶으로 보고, 네 방향에서 차례로 살핍니다.</p>
+        </div>
+        <ul class="cards">
+          <li class="card">
+            <picture>
+              <source srcset="assets/img/area-self.webp" type="image/webp">
+              <img src="assets/img/area-self.jpg" alt="턱을 괴고 생각에 잠긴 사람" width="576" height="720" loading="lazy">
+            </picture>
+            <div class="card-body">
+              <h3>자기이해</h3>
+              <p>내가 어떤 사람인지 설명할 말을 찾습니다. 성향과 감정, 반복되는 선택을 함께 정리합니다.</p>
+            </div>
+          </li>
+          <li class="card">
+            <picture>
+              <source srcset="assets/img/area-values.webp" type="image/webp">
+              <img src="assets/img/area-values.jpg" alt="책상에 앉아 노트에 목록을 적는 사람" width="576" height="720" loading="lazy">
+            </picture>
+            <div class="card-body">
+              <h3>가치관</h3>
+              <p>남의 기대와 내 기준을 나눠 봅니다. 지킬 것과 내려놓을 것의 순서를 세웁니다.</p>
+            </div>
+          </li>
+          <li class="card">
+            <picture>
+              <source srcset="assets/img/area-relation.webp" type="image/webp">
+              <img src="assets/img/area-relation.jpg" alt="카페에서 웃으며 이야기하는 두 사람" width="576" height="720" loading="lazy">
+            </picture>
+            <div class="card-body">
+              <h3>관계</h3>
+              <p>나를 지치게 하는 관계의 패턴을 살핍니다. 거리 두기, 부탁과 거절, 감정 표현을 연습합니다.</p>
+            </div>
+          </li>
+          <li class="card">
+            <picture>
+              <source srcset="assets/img/area-growth.webp" type="image/webp">
+              <img src="assets/img/area-growth.jpg" alt="해 질 녘 호숫가에 앉아 있는 사람" width="576" height="720" loading="lazy">
+            </picture>
+            <div class="card-body">
+              <h3>진로와 성장</h3>
+              <p>흥미와 강점, 가치를 진로에 잇습니다. 짧은 목표와 긴 목표로 나눠 실제로 움직일 계획을 짭니다.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 12주 과정: 스크롤 3D 점 연출 -->
+    <section class="journey" id="journey" aria-labelledby="journey-title">
+      <div class="journey-sticky">
+        <canvas class="journey-canvas" aria-hidden="true"></canvas>
+        <div class="journey-copy wrap">
+          <h2 id="journey-title" class="h2">막막함이<br>나만의 기준이 되기까지</h2>
+          <ol class="journey-steps">
+            <li class="jstep is-active" data-step="0">
+              <h3>흩어진 생각</h3>
+              <p>무엇이 문제인지도, 어디서부터인지도 모르는 상태에서 시작해도 괜찮습니다. 처음엔 누구나 생각이 흩어져 있습니다.</p>
+            </li>
+            <li class="jstep" data-step="1">
+              <h3>나를 설명하는 말 찾기</h3>
+              <p>성향과 감정, 반복되는 선택을 함께 정리해 흩어진 생각을 한 문장으로 모읍니다.</p>
+            </li>
+            <li class="jstep" data-step="2">
+              <h3>그 말로 골라 보기</h3>
+              <p>세운 기준으로 관계와 일의 선택을 직접 내려 보고, 어긋나는 지점을 함께 다듬습니다.</p>
+            </li>
+            <li class="jstep" data-step="3">
+              <h3>혼자서도 이어 가기</h3>
+              <p>코칭이 끝난 뒤에도 스스로 묻고 고를 수 있도록, 나만의 방식으로 굳힙니다.</p>
+            </li>
+          </ol>
+          <ol class="journey-scale" aria-label="코칭 기간">
+            <li><i aria-hidden="true"></i><span>1개월</span></li>
+            <li><i aria-hidden="true"></i><span>2개월</span></li>
+            <li><i aria-hidden="true"></i><span class="ex"><span class="nw">3개월<span class="ex-mark"><span class="sr-only">(</span>예시<span class="sr-only">)</span></span></span></span></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- 숫자 카드 -->
+    <section class="numbers section" aria-labelledby="numbers-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="numbers-title" class="h2">한 사람에게,<br>충분히 오래</h2>
+          <p class="lede">한두 번의 대화로는 새 기준이 생활에 붙지 않습니다. 짧은 위로 대신 긴 호흡으로 함께합니다.</p>
+        </div>
+        <ul class="stats">
+          <li class="stat">
+            <p class="stat-label">최소 코칭 기간</p>
+            <p class="stat-value"><span class="count" data-to="12">12</span><span class="unit ex"><span class="nw">주<span class="ex-mark"><span class="sr-only">(</span>예시<span class="sr-only">)</span></span></span></span></p>
+            <svg class="stat-icon" viewBox="0 0 28 28" aria-hidden="true"><rect x="4" y="6" width="20" height="18" rx="3"/><path d="M4 11h20M9 3v5M19 3v5"/></svg>
+          </li>
+          <li class="stat">
+            <p class="stat-label">한 주의 만남</p>
+            <p class="stat-value"><span class="count" data-to="3">3</span><span class="unit ex"><span class="nw">회<span class="ex-mark"><span class="sr-only">(</span>예시<span class="sr-only">)</span></span></span></span></p>
+            <svg class="stat-icon" viewBox="0 0 28 28" aria-hidden="true"><path d="M6 12a8 8 0 0 1 14-4.5M22 16a8 8 0 0 1-14 4.5"/><path d="M20 3v5h-5M8 25v-5h5"/></svg>
+          </li>
+          <li class="stat">
+            <p class="stat-label">전체 만남</p>
+            <p class="stat-value"><span class="count" data-to="36">36</span><span class="unit ex"><span class="nw">번<span class="ex-mark"><span class="sr-only">(</span>예시<span class="sr-only">)</span></span></span></span></p>
+            <svg class="stat-icon" viewBox="0 0 28 28" aria-hidden="true"><circle cx="7" cy="7" r="2"/><circle cx="14" cy="7" r="2"/><circle cx="21" cy="7" r="2"/><circle cx="7" cy="14" r="2"/><circle cx="14" cy="14" r="2"/><circle cx="21" cy="14" r="2"/><circle cx="7" cy="21" r="2"/><circle cx="14" cy="21" r="2"/><circle cx="21" cy="21" r="2"/></svg>
+          </li>
+          <li class="stat">
+            <p class="stat-label">처음부터 끝까지</p>
+            <p class="stat-value"><span class="count-static">1:1</span></p>
+            <svg class="stat-icon" viewBox="0 0 28 28" aria-hidden="true"><circle cx="9" cy="9" r="3.5"/><circle cx="19" cy="9" r="3.5"/><path d="M3 23c0-3.5 2.7-6 6-6s6 2.5 6 6M13 23c0-3.5 2.7-6 6-6s6 2.5 6 6"/></svg>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 진행 방식 -->
+    <section class="process section" id="process" aria-labelledby="process-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="process-title" class="h2">한 번의 만남은<br>이렇게 흘러갑니다</h2>
+          <p class="lede">매번 같은 흐름으로 만나기 때문에, 무엇을 이야기할지 미리 정리해 오지 않아도 됩니다.</p>
+        </div>
+        <ol class="flow">
+          <li><span class="flow-num">1</span><h3>체크인</h3><p>지난 만남 뒤로 달라진 것과 해 본 숙제를 함께 봅니다.</p></li>
+          <li><span class="flow-num">2</span><h3>깊은 대화</h3><p>그날 가장 무거운 주제 하나를 질문으로 풀어 갑니다.</p></li>
+          <li><span class="flow-num">3</span><h3>정리와 숙제</h3><p>오늘 찾은 말을 한 줄로 적고, 다음 만남까지 해 볼 일을 정합니다.</p></li>
+        </ol>
+
+        <div class="panels">
+          <div class="panel">
+            <h3 class="panel-title">프로그램</h3>
+            <dl class="rows">
+              <div class="row"><dt>기본</dt><dd><span class="ex">12주. 자기이해와 가치관을 중심으로 나만의 기준을 <span class="nw">세웁니다.<span class="ex-mark"><span class="sr-only">(</span>예시<span class="sr-only">)</span></span></span></span></dd><dd class="aside">비용은 상담 때 안내</dd></div>
+              <div class="row"><dt>심화</dt><dd><span class="ex">기본 과정 뒤 12주. 관계와 진로로 넓혀 실제 선택에 <span class="nw">적용합니다.<span class="ex-mark"><span class="sr-only">(</span>예시<span class="sr-only">)</span></span></span></span></dd><dd class="aside">비용은 상담 때 안내</dd></div>
+              <div class="row"><dt>멤버십</dt><dd><span class="ex">과정을 마친 뒤 한 달에 한 번, 세운 기준이 잘 지켜지는지 함께 <span class="nw">점검합니다.<span class="ex-mark"><span class="sr-only">(</span>예시<span class="sr-only">)</span></span></span></span></dd><dd class="aside">비용은 상담 때 안내</dd></div>
+            </dl>
+          </div>
+          <div class="panel">
+            <h3 class="panel-title">코칭과 상담은 다릅니다</h3>
+            <dl class="rows">
+              <div class="row"><dt>상담</dt><dd>마음의 상처를 돌보고 회복하는 데 집중합니다.</dd></div>
+              <div class="row"><dt>코칭</dt><dd>지금과 앞으로의 선택, 그리고 행동을 바꾸는 데 집중합니다.</dd></div>
+            </dl>
+            <p class="note">상담이 먼저 필요해 보이면 <span class="ex">연계된 전문 <span class="nw">상담기관을<span class="ex-mark"><span class="sr-only">(</span>예시<span class="sr-only">)</span></span></span></span> 안내해 드립니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 코치 -->
+    <section class="coach section" id="coach" aria-labelledby="coach-title">
+      <div class="wrap coach-grid">
+        <figure class="coach-photo" aria-label="코치 사진 자리">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="17" r="8"/><path d="M8 42c0-8.8 7.2-15 16-15s16 6.2 16 15"/></svg>
+          <span>코치 사진 자리</span>
+        </figure>
+        <div class="coach-body">
+          <h2 id="coach-title" class="h2">함께할 코치</h2>
+          <p class="coach-quote"><span class="ex">“답을 아는 사람보다, 끝까지 함께 묻는 사람이고 <span class="nw">싶습니다.”<span class="ex-mark"><span class="sr-only">(</span>예시<span class="sr-only">)</span></span></span></span></p>
+          <p class="coach-name">— <span class="ex"><span class="nw">한서윤<span class="ex-mark"><span class="sr-only">(</span>예시<span class="sr-only">)</span></span></span></span> 코치</p>
+          <p class="coach-text"><span class="ex">처음 만남부터 마지막 만남까지 한 코치가 <span class="nw">맡습니다.<span class="ex-mark"><span class="sr-only">(</span>예시<span class="sr-only">)</span></span></span></span> 지난 이야기를 다시 설명하지 않아도 되도록, 만남마다 나눈 말을 기록으로 이어 갑니다.</p>
+          <dl class="coach-record">
+            <div><dt>자격</dt><dd class="tbd">확정 후 기입</dd></div>
+            <div><dt>경력</dt><dd class="tbd">확정 후 기입</dd></div>
+            <div><dt>코칭 분야</dt><dd>청년 자기이해 · 관계 · 진로</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- 자주 묻는 질문 -->
+    <section class="faq section" id="faq" aria-labelledby="faq-title">
+      <div class="wrap faq-grid">
+        <div class="faq-head">
+          <h2 id="faq-title" class="h2">자주 묻는<br>질문</h2>
+          <p class="lede">읽은 질문에는 주황 점이 남습니다.</p>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary><span class="read-dot" aria-hidden="true"></span><span class="q">코칭은 상담과 무엇이 다른가요?</span><span class="pm" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10"/><path class="v" d="M8 3v10"/></svg></span></summary>
+            <p>상담은 지난 상처를 돌보고 마음을 회복하는 데, 코칭은 지금과 앞으로의 선택과 행동을 바꾸는 데 무게를 둡니다. 이야기를 나누다 상담이 먼저 필요하다고 판단되면 솔직하게 말씀드리고 상담기관을 안내합니다.</p>
+          </details>
+          <details>
+            <summary><span class="read-dot" aria-hidden="true"></span><span class="q">어떤 사람에게 잘 맞나요?</span><span class="pm" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10"/><path class="v" d="M8 3v10"/></svg></span></summary>
+            <p>겉으로는 잘 지내는데 '이게 정말 내 선택인가' 하는 물음이 자주 드는 분, 진로와 관계와 자기계발 사이에서 무엇부터 해야 할지 모르는 분께 잘 맞습니다. 당장 답을 듣고 싶은 분보다 직접 답을 찾고 싶은 분께 더 맞습니다.</p>
+          </details>
+          <details>
+            <summary><span class="read-dot" aria-hidden="true"></span><span class="q">진로 고민도 다룰 수 있나요?</span><span class="pm" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10"/><path class="v" d="M8 3v10"/></svg></span></summary>
+            <p>네. 진로를 직업 하나 고르는 일이 아니라 어떻게 살고 싶은지와 이어진 문제로 봅니다. 흥미, 강점, 가치, 생활 리듬을 함께 점검하고 현실적인 선택지를 좁힌 뒤 단계별 계획을 세웁니다.</p>
+          </details>
+          <details>
+            <summary><span class="read-dot" aria-hidden="true"></span><span class="q">관계가 너무 어려운데 도움이 될까요?</span><span class="pm" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10"/><path class="v" d="M8 3v10"/></svg></span></summary>
+            <p>반복되는 갈등을 감정, 생각, 행동으로 나눠 살펴봅니다. 편안한 거리, 부탁하고 거절하는 말, 감정을 표현하는 방법을 실제 장면으로 연습합니다. 목표는 '좋은 사람'이 아니라 '나답게 관계 맺는 사람'입니다.</p>
+          </details>
+          <details>
+            <summary><span class="read-dot" aria-hidden="true"></span><span class="q">왜 최소 3개월인가요?</span><span class="pm" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10"/><path class="v" d="M8 3v10"/></svg></span></summary>
+            <p>새로 세운 기준은 실제 선택 앞에서 몇 번 써 봐야 내 것이 됩니다. 처음 한 달은 나를 설명하는 말을 찾고, 다음 한 달은 그 말로 골라 보고, 마지막 한 달은 혼자서도 이어 갈 수 있게 다듬습니다. <span class="ex">기간과 횟수는 상담 때 함께 <span class="nw">조정합니다.<span class="ex-mark"><span class="sr-only">(</span>예시<span class="sr-only">)</span></span></span></span></p>
+          </details>
+          <details>
+            <summary><span class="read-dot" aria-hidden="true"></span><span class="q">온라인으로도 할 수 있나요?</span><span class="pm" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10"/><path class="v" d="M8 3v10"/></svg></span></summary>
+            <p><span class="ex">기본은 센터에서 마주 앉아 진행합니다. 일정상 어려운 주에는 화상으로 바꿀 수 <span class="nw">있습니다.<span class="ex-mark"><span class="sr-only">(</span>예시<span class="sr-only">)</span></span></span></span></p>
+          </details>
+          <details>
+            <summary><span class="read-dot" aria-hidden="true"></span><span class="q">처음엔 무엇을 준비하면 되나요?</span><span class="pm" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10"/><path class="v" d="M8 3v10"/></svg></span></summary>
+            <p>요즘 가장 자주 떠오르는 고민 한 가지면 충분합니다. 신청 뒤 짧은 사전 질문지를 보내 드리니, 잘 쓰려 하지 말고 떠오르는 대로 적어 주세요.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- 첫 상담 신청 -->
+    <section class="apply section" id="apply" aria-labelledby="apply-title">
+      <div class="wrap apply-grid">
+        <div class="apply-head">
+          <h2 id="apply-title" class="h2">고민 한 가지면<br>충분합니다</h2>
+          <p class="lede">정리된 말이 없어도 괜찮습니다. 남겨 주시면 <span class="ex">영업일 기준 하루 <span class="nw">안에<span class="ex-mark"><span class="sr-only">(</span>예시<span class="sr-only">)</span></span></span></span> 연락드립니다.</p>
+          <dl class="contact">
+            <div><dt>주소</dt><dd><span class="ex">충북 청주시 흥덕구 (상세 <span class="nw">주소)<span class="ex-mark"><span class="sr-only">(</span>예시<span class="sr-only">)</span></span></span></span></dd></div>
+            <div><dt>전화</dt><dd><a href="tel:010-0000-0000" class="ex"><span class="nw">010-0000-0000<span class="ex-mark"><span class="sr-only">(</span>예시<span class="sr-only">)</span></span></span></a></dd></div>
+            <div><dt>이메일</dt><dd><a href="mailto:hello@yoursupport.co.kr" class="ex"><span class="nw">hello@yoursupport.co.kr<span class="ex-mark"><span class="sr-only">(</span>예시<span class="sr-only">)</span></span></span></a></dd></div>
+            <div><dt>상담 시간</dt><dd><span class="ex">평일 13:00–21:00<br>토 <span class="nw">10:00–16:00<span class="ex-mark"><span class="sr-only">(</span>예시<span class="sr-only">)</span></span></span></span></dd></div>
+          </dl>
+        </div>
+
+        <form class="apply-form" id="apply-form" novalidate data-endpoint="">
+          <div class="field">
+            <label for="f-name">이름</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="e-name">
+            <p class="field-error" id="e-name" hidden></p>
+          </div>
+          <div class="field">
+            <label for="f-phone">휴대폰 번호</label>
+            <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="010-1234-5678" required aria-describedby="e-phone">
+            <p class="field-error" id="e-phone" hidden></p>
+          </div>
+          <div class="field">
+            <label for="f-concern">요즘 가장 많이 떠오르는 고민 한 가지</label>
+            <textarea id="f-concern" name="concern" rows="4" required aria-describedby="e-concern" placeholder="한 줄이어도 괜찮습니다"></textarea>
+            <p class="field-error" id="e-concern" hidden></p>
+          </div>
+          <div class="consent">
+            <label class="check-row small">
+              <input type="checkbox" id="f-consent" name="consent" required aria-describedby="e-consent">
+              <span class="box" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3.5 8.5l3 3 6-7"/></svg></span>
+              <span class="check-text">개인정보 수집·이용에 동의합니다</span>
+            </label>
+            <details class="consent-detail">
+              <summary><span>내용 보기</span><span class="pm" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10"/><path class="v" d="M8 3v10"/></svg></span></summary>
+              <ul>
+                <li>목적: 상담 신청에 대한 연락과 안내</li>
+                <li>항목: 이름, 휴대폰 번호, 신청 내용</li>
+                <li>보유 기간: 문의 처리 후 1년. 요청하시면 바로 파기합니다.</li>
+                <li>동의하지 않으실 수 있으나, 그 경우 신청서를 받을 수 없습니다. 전화나 이메일로 문의해 주세요.</li>
+              </ul>
+            </details>
+            <p class="field-error" id="e-consent" hidden></p>
+          </div>
+          <div class="submit-row">
+            <button class="pill pill-accent pill-lg" type="submit">첫 상담 신청하기</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <p class="footer-brand"><span class="footer-logo" role="img" aria-label="Your Support coaching center"></span></p>
+        <a class="pill pill-ghost" href="#apply">첫 상담 신청하기 <svg class="arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+      </div>
+      <dl class="footer-info">
+        <div><dt>상호</dt><dd>Your Support 유어서포트 코칭센터</dd></div>
+        <div><dt>주소</dt><dd><span class="ex">충북 청주시 흥덕구 (상세 <span class="nw">주소)<span class="ex-mark"><span class="sr-only">(</span>예시<span class="sr-only">)</span></span></span></span></dd></div>
+        <div><dt>상담 시간</dt><dd><span class="ex">평일 13:00–21:00 · 토 <span class="nw">10:00–16:00<span class="ex-mark"><span class="sr-only">(</span>예시<span class="sr-only">)</span></span></span></span></dd></div>
+      </dl>
+      <p class="footer-fine">'예시' 표시가 붙은 정보는 확정 전입니다. · 사진과 영상은 임시 자료입니다. · © 2026 Your Support</p>
+    </div>
+  </footer>
+
+  <script src="intro.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
+  <script src="main.js" defer></script>
+  <script type="module" src="journey.js"></script>
+</body>
+</html>

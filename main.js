@@ -184,7 +184,7 @@
     }
     const endpoint = form.dataset.endpoint;
     if (!endpoint) {
-      setStatus('아직 예시 페이지라 신청서가 전송되지 않습니다. 전화나 이메일로 연락해 주세요.', 'notice');
+      setStatus('온라인 신청 접수는 곧 열립니다. 조금만 기다려 주세요.', 'notice');
       return;
     }
     submit.setAttribute('aria-busy', 'true'); submit.disabled = true; submit.textContent = '보내는 중…';
